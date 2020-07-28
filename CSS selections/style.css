@@ -1,0 +1,47 @@
+/* CSS ::selection Selector  */
+
+/* The selection selector matches the portion of an element that is selected by a user 
+
+   Only a few CSS properties can be applied to the ::selection selector like color,
+   background, cursor and outline
+
+   Browser by default property while highlighting the text is background is blue and color is white
+
+   */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1080px;
+    border: 1px solid #000;
+}
+
+.container h2 {
+    text-align: center;
+
+}
+
+.container p {
+    text-align: center;
+}
+
+
+
+/* Universal selector  */
+::selection {
+    background: yellow;
+    color: #000;
+}
+
+/* if we want separate color for heading , para or etc  */
+
+h2::selection {
+    background: coral;
+    color: #fff;
+}
