@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 ways to Center a Div inside a Div</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .parent-div {
+            /*It will take complete width and height*/
+            width: 100vw;
+            height: 100vh;
+            background: #2980b9;
+
+            /*Centering Method 2: */
+            display: flex;
+            justify-content: center;
+            /*Centering horizontally*/
+            align-items: center;
+            /*Centering Vertically*/
+
+            /*Centering Method 3: */
+            display: grid;
+            place-items: center;
+        }
+
+        .child-div {
+            width: 60vw;
+            height: 60vh;
+            background: #1abc9c;
+
+            /* Centering method 1: */
+            position: relative;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent-div">
+        <div class="child-div">
+            <h1 style="text-align: center; padding: 20px;">Welcome to master Css Class</h1>
+        </div>
+    </div>
+</body>
+
+</html>
